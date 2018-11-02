@@ -1,10 +1,13 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Community assembly patterns of novel mountain treeline ecosystems promoted by invasive pines</title>
+    <title>Community assembly patterns in novel mountain treeline ecosystems promoted by invasive pines</title>
     <meta charset="utf-8">
     <meta name="author" content="Gabriel Muñoz" />
     <link href="assets/remark-css-0.0.1/default.css" rel="stylesheet" />
+    <script src="assets/htmlwidgets-1.0/htmlwidgets.js"></script>
+    <link href="assets/sequences-0.1/sequences.css" rel="stylesheet" />
+    <script src="assets/sunburst-binding-2.1.0/sunburst.js"></script>
     <link rel="stylesheet" href="assets/font-awesome-4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="assets/academicons-1.8.1/css/academicons.min.css">
     <link rel="stylesheet" href="qcbsR.css" type="text/css" />
@@ -14,9 +17,9 @@
     <textarea id="source">
 class: center, middle, inverse, title-slide
 
-# Community assembly patterns of novel mountain treeline ecosystems promoted by invasive pines
+# Community assembly patterns in novel mountain treeline ecosystems promoted by invasive pines
 ### Gabriel Muñoz
-### Sep. 2018
+### Nov, 2018
 
 ---
 
@@ -31,27 +34,36 @@ class: center, middle, inverse, title-slide
 ## Preliminary info:
 
 
-**PhD. proposal (*in progress*)**
+**Ph.D. proposal**
 
+.small[
 - Supervisor:  [Dr. Jean-Phillipe Lessard](http://jeanphilippelessard.com/)
 
+.tiny[Department of Biology, **Community Ecology and Biogeography**, Concordia University, Montreal, Canada]
 
+- Collaborator: [Dr. Martin-Nunez](https://scholar.google.com/citations?user=ajiHSOEAAAAJ)
 
-
+.tiny[**Grupo de Ecología de Invasiones**, Ecotono, INIBIOMA, Universidad del Comahue, Bariloche, Argentina]
+]
 .pull-left[
-![scale: 50%](http://sas2018.hybrid.concordia.ca/img/Concordia-Logo.png)
+.pull-left[
+![scale: 120%](http://sas2018.hybrid.concordia.ca/img/Concordia-Logo.png)
 ]
 
 
 .pull-right[
-![:scale 40%](images/LessardLabLogo.png)
+![:scale 90%](images/LessardLabLogo.png)
+]]
+
+.pull-right[ 
+![:scale 40%](images/ConicetLogo.jpeg)
 ]
 
 
 
 
 ------------
-*Follow this presentation online*: insert link here!
+*Follow this presentation online at [rebrand.ly/NovelTreeCommunities](https://fgabriel1891.github.io/NovelPineEcosystems/ProposalTalk.html)*
 
 
 ---
@@ -60,88 +72,100 @@ class: inverse, center, middle
 # Introduction
 
 ---
-## Accelerated global change
-
-
-.small[
-- Human influenced
-- Loss of biodiversity
-- Degradation of ecosystems functions and services
-  ]
+## Human influenced global change
 
 .pull-left[
+.small[
+Accelerated rate
 
-![:scale 90%](https://arc-anglerfish-arc2-prod-tronc.s3.amazonaws.com/public/GJJQYN27JRG4ZAYXWYOC7WN6NA.jpg) 
+- Greenhouse emissions
+- Land conversion pressures
+- Global trade
+  ]
+  
+&lt;br&gt;
+&lt;br&gt;
+  
+![:scale 100%](images/rangeShift.jpg)
 
-.tiny[*Skiing in ASPEN*]
+.tiny[*Populus tremuloides* range shifts under the RCP 8.5]
 ]
 
-.pull-right[
-![](https://media.giphy.com/media/Plf80MBv8WtqM/giphy.gif)
+.pull-right[ 
 
-.tiny[*Deforestation in Amazon rainforest*]
+.center[
+![:scale 80%](https://media.giphy.com/media/Plf80MBv8WtqM/giphy.gif)
 
+.tiny[Deforestation in Amazon rainforest]
+
+]
+
+.center[
+
+![:scale 80%](images/InvasionTreath.png) 
+
+.tiny[Threat for invasiveness]
+]
 ]
 
 ------------
 .verytiny[ 
 
 - http://earthenginepartners.appspot.com/science-2013-global-forest
-- http://www.latimes.com/opinion/readersreact/la-le-0731-friday-cliamte-change-skiing-20150731-story.html
-- Vitousek, P.M., Mooney, H.A., Lubchenco, J. &amp; Melillo, J. (1997) Human domination of Earth's ecosystems. Science, 277, 494–499
 - Sanderson, E.W., Jaiteh, M., Levy, M.A., Redfrod, K.H., Wannebo, A.V. &amp; Woolmer, G. (2002) The human footprint and the last of the wild. Bioscience, 52, 891–904
 
 ]
 
 ---
-## Emergence of *novel* Ecosystems
-
+## *novel* Ecosystems
+.pull-left[
 .small[
 - Worldwide
-- Deliberate *(e.g. intensively managed systems / fires)*
-- Non-premeditate *(e.g. introduction of species / abandonment of fields)*
-- Shifts in ecotones/ranges *(e.g. Advancing treelines / Changes on species ranges )*
-  ]
+- Unique
+- Reshape of species combinations
+- New ecosystem properties]
+![:scale 80%](images/newBiomes.jpg)
 
-.center[
-![](images/NovelEcosystems.png)
+.tiny[Anthropogenic biomes]
+
+]
+.pull-right[
+![](images/newInteractions.jpg)
+
+.tiny[New native / non native interactions]
 ]
 
-.center[**Reshaping species combinations and ecosystem properties**]
+
+
 
 ------------
 .verytiny[ 
-- https://www.nrcan.gc.ca/forests/climate-change/forest-change/17778
-
 - Hobbs, R. J., Arico, S., Aronson, J., Baron, J. S., Bridgewater, P., Cramer, V. A., … Zobel, M. (2006). Novel ecosystems: Theoretical and management aspects of the new ecological world order. Global Ecology and Biogeography, 15(1), 1–7. https://doi.org/10.1111/j.1466-822X.2006.00212.x
 ]
 
 ---
 ## Community assembly theory
-
-.center[
-.alert[General framework to understand the structuring of natural communities]]
-
 .small[ 
 *What shapes the identity and abundace of species within a community?*
 ]
+.small[
+- Hierarchically organized stochastic and deterministic processes
+
+- Scale dependant
+]
 
 .pull-left[ 
-.small[
-
-**Assembly rules (Diamond 1975) of Species Communities** 
-
-**Hierarchical stochastic and deterministic processes**
-  - dispersal limitation
-  - environmental filtering
-  - biotic interactions
-  ] ]
-  
-.center[
-![:scale 40%](https://els-jbs-prod-cdn.literatumonline.com/cms/attachment/2f7e0eb6-0672-4b2e-92c2-4ba09a8aff3f/gr1.jpg)
+![:scale 80%](https://els-jbs-prod-cdn.literatumonline.com/cms/attachment/2f7e0eb6-0672-4b2e-92c2-4ba09a8aff3f/gr1.jpg)
 
 .tiny[Pearson et al. 2018]
 ]
+
+.pull-right[ 
+![:scale 80%](images/ComAssemblyFilt.jpg)
+
+.tiny[ Munoz F. *et al*. 2018]
+]
+
 
 ------------
 .verytiny[ 
@@ -151,89 +175,50 @@ class: inverse, center, middle
 
 
 ---
-## Community assembly theory
+## Trait-based community assembly
 
 .small[
-
-Ecological filters and underlying process are scale dependant 
-
+- Reveal generalities &amp; mechanisms across organisms and ecosystems .tiny[(McGill 2006)]
+- Traits influence trophic network structure .tiny[(Van der Plas *et al*. 2012; Gravel *et al*. 2016; Laigle *et al*. 2018)]
 ]
-
-
-
-.center[
-![:scale 40%](images/ComAssemblyFilt.jpg)
-]
-
-------------
-.verytiny[ 
-- Perronne, R., Munoz, F., Borgy, B., Reboud, X., &amp; Gaba, S. (2017). How to design trait-based analyses of community assembly mechanisms: Insights and guidelines from a literature review. Perspectives in Plant Ecology, Evolution and Systematics, 25, 29–44. https://doi.org/10.1016/j.ppees.2017.01.004]
-
-
----
-## Trait-based community assembly 
-.small[
-Reveal generalities across organisms and ecosystems (McGill 2006)
-
-Elucidate assembly mechanisms (Raymond-Leonard *et al*. 2018) 
-
-]
-.center[
-![:scale 60%](images/CATraitBased.png)
-]
-
-.small[Van der Plas *et al*. 2012 ]
-
-------------
-.verytiny[ 
-- McGill, Brian J., et al. "Rebuilding community ecology from functional traits." Trends in ecology &amp; evolution 21.4 (2006): 178-185.
-- Raymond-Léonard, L. J., Gravel, D., Reich, P. B., &amp; Handa, I. T. (2018). Springtail community structure is influenced by functional traits but not biogeographic origin of leaf litter in soils of novel forest ecosystems. Proceedings of the Royal Society B: Biological Sciences. https://doi.org/10.1098/rspb.2018.0647
-- Van Der Plas, F., Anderson, T. M., &amp; Olff, H. (2012). Trait similarity patterns within grass and grasshopper communities: Multitrophic community assembly at work. Ecology, 93(4), 836–846. https://doi.org/10.1890/11-0975.1
-]
-
----
-## Trait-based community assembly 
-
-.small[
-Traits influence trophic network structure (Van der Plas *et al*. 2012; Gravel *et al*. 2016; Laigle *et al*. 2018)
-
-]
-
 .pull-left[
-![:scale 50%](images/CANetwork.png)
+![:scale 90%](images/CATraitBased.png)
+
+.tiny[Van der Plas *et al*. 2012 ]
+
+.small[need for **multitrophic** approaches (Seibold *et al* 2018)]
+]
+
+.pull-right[
+![:scale 70%](images/CANetwork.png)
 
 .tiny[Van der Plas *et al*. 2012]
 ]
 
-.pull-right[
-![:scale 50%](images/FTNetwork.png)
 
-.tiny[Laigle *et al*. 2018]
-]
-
-Hence, need for **multitrophic** approaches (Seibold *et al* 2018)
 
 ------------
 .verytiny[ 
-- Van Der Plas, F., Anderson, T. M., &amp; Olff, H. (2012). Trait similarity patterns within grass and grasshopper communities: Multitrophic community assembly at work. Ecology, 93(4), 836–846. https://doi.org/10.1890/11-0975.1
-- Laigle, I., Aubin, I., Digel, C., Brose, U., Boulangeat, I., &amp; Gravel, D. (2018). Species traits as drivers of food web structure. Oikos, 127(2), 316–326. https://doi.org/10.1111/oik.04712
-- Gravel, D. et al. 2016. The meaning of functional trait composition of food webs for ecosystem functioning. – Phil. Trans. R. Soc. B 371: 20150268.
+- McGill, Brian J., et al. "Rebuilding community ecology from functional traits." Trends in ecology &amp; evolution 21.4 (2006): 178-185.
 - Seibold, S., Cadotte, M. W., Macivor, J. S., Thorn, S., &amp; Müller, J. (2018). The Necessity of Multitrophic Approaches in Community Ecology. https://doi.org/10.1016/j.tree.2018.07.001
+- Van Der Plas, F., Anderson, T. M., &amp; Olff, H. (2012). Trait similarity patterns within grass and grasshopper communities: Multitrophic community assembly at work. Ecology, 93(4), 836–846. https://doi.org/10.1890/11-0975.1
 ]
 
 ---
 ## Mountains 
 
+.alert[Mountains are important!]
 .small[ 
-- Important! 
 - Provides goods and services to a global population
-- Worldwide centers &amp; historical generators of biodiversity (Antonelli *et al* 2018; Flantua 2017)
-- *Novel* ecosystems happen more frequently in mountains
+- Worldwide centers &amp; historical generators of biodiversity .tiny[(Antonelli *et al* 2018; Flantua 2017)]
+- Fragile ecosystems, sensible to alterations
+]
+.pull-left[
+![:scale 80%](images/andesSpace.jpg)]
+.pull-right[
+![:scale 100%](images/MountainsGS.png)
 ]
 
-.center[
-![:scale 60%](images/MountainsGS.png)
-]
 ------------
 .verytiny[ 
 - Egan, P. A., &amp; Price, M. F. (2017). Mountain Ecosystem Services and Climate Change. Unesco-Ihp/Mbp. https://doi.org/10.1659/MRD-JOURNAL-D-16-00110.1
@@ -242,16 +227,20 @@ Hence, need for **multitrophic** approaches (Seibold *et al* 2018)
 
 ---
 
-## Pinus contorta invasions 
+## **Pinus contorta**
 
+.pull-left[
 .small[
 - *Pinus contorta* (most invasive species)
 - brought and invaded mountain ecosystems worldwide
-- creating  *novel* ecosystems
+- few information about mechanisms behind the dynamics of emerging ecosystems
+]
+![:scale 100%](images/P.contorta.png)
+
 ]
 
-.center[
-![:scale 80%](images/P.contorta.png)
+.pull-right[
+![:scale 70%](images/PineAgrofo.png)
 
 ]
 
@@ -259,30 +248,12 @@ Hence, need for **multitrophic** approaches (Seibold *et al* 2018)
 .verytiny[ Langdon, B., Pauchard, A., &amp; Aguayo, M. (2010). Pinus contorta invasion in the Chilean Patagonia: local patterns in a global context. Biological Invasions, 12(12), 3961-3971]
 
 ---
-## Novel mountain treelines in Patagonia 
+## Pines in Patagonia 
 
 .small[ 
-- Introduced in Patagonia 70's for agroforestry
-- Moving treelines upwards
-- Sharing landscape with native *Notophagus* species
+- Introduced in Patagonia 70's for agroforestry (70 000ha)
+- Landscape level consequences in nutrient cycling and biodiversity 
 ]
-
-.pull-left[
-![:scale 80%](images/PineAgrofo.png)
-]
-
-.pull-right[
-![:scale 80%](images/LengaForest.png)
-]
-
-
----
-## Novel mountain treelines in Patagonia 
-
-.small[ 
-- Observing the formation of novel ecosystems
-- Disentangle multitrophic mechanics of community assembly 
-] 
 
 .center[
 ![:scale 50%](images/PineMap.png)
@@ -291,11 +262,16 @@ Hence, need for **multitrophic** approaches (Seibold *et al* 2018)
 ---
 ## Research Questions 
 
-.alert[Q1: What are the determinants/mechanisms for the assemblage of novel *pine* communities?]
+.alert[Q1: what are the mechanisms shaping the assembly of novel treeline communities?]
 
-.alert[Q2: Is there functional redundancy among sites?]
+- what functional traits and/or scale of reference pools explain better the observed novel communities?
 
-.alert[Q3.Do novel species/traits combinations produce novel structural arragements of (mutualistic/antagonistic/co-occurrence /trophic) interaction networks?]
+- what is the relative contribution of the different community assembly processes (i.e. dispersal assembly, filtering or limiting similarity).
+
+.alert[Q2: are the functional traits determinants of
+community assembly also predictors of trophic network structure?]
+
+
 
 
 ---
@@ -305,49 +281,32 @@ class: inverse, center, middle
 
 
 ---
-## Biodiversity data 
-
-.small[
-- Stratified design (Canopy openess)
-
-- 10 x 10m plot 
-
-- Sweeping (aboveground)
-
-- Sifting (belowground)
-
-- Plant biodiversity] 
+## Workflow
 
 
+.center[
+![:scale 80%](images/Workflow.pdf)
+]
 
 ---
 ## Trait data 
-.pull-left[
-.small[ 
-Plants: 
- - Cornelissen *et al*. 2003 
- - Dias *et al* 2004 / Cadotte *et al* 2017 
- - Plant height / Specific leaf area / Leaf surface area 
- - ImageTool v.3
-]
 
-.small[ 
-Arthropods: 
- - Moreti 2017
- - Laigle *et al*. 2018
- - Perovic *et al* 2018
- - body size / Feeding guild / Dispersal tendency / Taxonomic distances / body size and wing lenght residuals 
-]]
+<div class="sunburst html-widget" id="htmlwidget-ee707097b2112f62f28d" style="width:800px;height:480px; position:relative;">
+<div>
+<div class="sunburst-main">
+<div class="sunburst-sequence"></div>
+<div class="sunburst-chart">
+<div class="sunburst-explanation" style="visibility:hidden;"></div>
+</div>
+</div>
+<div class="sunburst-sidebar">
+<input type="checkbox" class="sunburst-togglelegend" style="visibility:hidden;">Legend</input>
+<div class="sunburst-legend" style="visibility:hidden;"></div>
+</div>
+</div>
+</div>
+<script type="application/json" data-for="htmlwidget-ee707097b2112f62f28d">{"x":{"data":{"children":[{"name":"Invertebrates","children":[{"name":"Feeding","children":[{"name":"Feeding guild","children":[{"name":"Literature","size":1,"colname":"X4"}],"colname":"X3"}],"colname":"X2"},{"name":"Life history","children":[{"name":"Life span","children":[{"name":"Literature","size":1,"colname":"X4"}],"colname":"X3"},{"name":"Ontogeny","children":[{"name":"Literature","size":1,"colname":"X4"}],"colname":"X3"}],"colname":"X2"},{"name":"Morphology","children":[{"name":"Body size","children":[{"name":"Measure","size":1,"colname":"X4"}],"colname":"X3"},{"name":"Colour","children":[{"name":"Measure","size":1,"colname":"X4"}],"colname":"X3"},{"name":"Eye morphology","children":[{"name":"Measure","size":1,"colname":"X4"}],"colname":"X3"},{"name":"Hairiness","children":[{"name":"Measure","size":1,"colname":"X4"}],"colname":"X3"},{"name":"Respiration system","children":[{"name":"Observation/Literature","size":1,"colname":"X4"}],"colname":"X3"}],"colname":"X2"},{"name":"Physiology","children":[{"name":"Aggregation","children":[{"name":"Observation/Literature","size":1,"colname":"X4"}],"colname":"X3"},{"name":"Dispersal mode","children":[{"name":"Measure/Literature","size":1,"colname":"X4"}],"colname":"X3"},{"name":"Sociality","children":[{"name":"Literature","size":1,"colname":"X4"}],"colname":"X3"}],"colname":"X2"}],"colname":"X1"},{"name":"Plants","children":[{"name":"Leaf traits","children":[{"name":"Leaf dry matter content","children":[{"name":"Measure","size":1,"colname":"X4"}],"colname":"X3"},{"name":"Leaf frost resistance","children":[{"name":"Measure","size":1,"colname":"X4"}],"colname":"X3"},{"name":"Leaf lifespan","children":[{"name":"Literature","size":1,"colname":"X4"}],"colname":"X3"},{"name":"Leaf N/P concentration","children":[{"name":"Measure","size":1,"colname":"X4"}],"colname":"X3"},{"name":"Leaf phenology","children":[{"name":"Literature","size":1,"colname":"X4"}],"colname":"X3"},{"name":"Leaf size","children":[{"name":"Measure","size":1,"colname":"X4"}],"colname":"X3"},{"name":"Physical strenght of leaves","children":[{"name":"Measure","size":1,"colname":"X4"}],"colname":"X3"},{"name":"Specific leaf area","children":[{"name":"Measure","size":1,"colname":"X4"}],"colname":"X3"}],"colname":"X2"},{"name":"Stem and belowground traits","children":[{"name":"Stem specific density","children":[{"name":"Measure","size":1,"colname":"X4"}],"colname":"X3"},{"name":"Twig dry matter content","children":[{"name":"Measure","size":1,"colname":"X4"}],"colname":"X3"}],"colname":"X2"},{"name":"Whole plant traits","children":[{"name":"Clonality","children":[{"name":"Observation/Literature","size":1,"colname":"X4"}],"colname":"X3"},{"name":"Flammability","children":[{"name":"Measure","size":1,"colname":"X4"}],"colname":"X3"},{"name":"Growth form","children":[{"name":"Observation","size":1,"colname":"X4"}],"colname":"X3"},{"name":"Life form","children":[{"name":"Observation","size":1,"colname":"X4"}],"colname":"X3"},{"name":"Plant height","children":[{"name":"Measure","size":1,"colname":"X4"}],"colname":"X3"},{"name":"Spinescence","children":[{"name":"Observation/Literature","size":1,"colname":"X4"}],"colname":"X3"}],"colname":"X2"}],"colname":"X1"}],"name":"root"},"options":{"legendOrder":null,"colors":null,"valueField":"size","percent":true,"count":true,"explanation":null,"breadcrumb":[],"legend":false,"sortFunction":null,"sumNodes":true}},"evals":[],"jsHooks":[]}</script>
 
-.pull-right[
-.small[
-For each trait:
--	Basic distribution descriptors
--	Scaled trait range (OTR)
-- Unscaled resudual trait range (trait expantion)
-- Unscaled residual trait evenness (trait dispersión)
-]
-]
 
 ---
 ## Trait data 
@@ -358,60 +317,20 @@ How to account for the variablity across thropic communities?
 
 
 ---
-##  Q1: 
+##  H1:
 
-.small[What are the determinants/mechanisms for the assemblage of novel *pine* communities?]
-.alert[coalescent-based simulations (Munoz *et al* 2018)]
-
-.pull.left[
-![:scale 60%](images/CoBSim.png)
-]
-.tiny[
-- Q1.1: What traits / set of traits explain that better explain observed patterns? (across all/partitioned trophic community &amp; scales) 
-- Q1.2: What is the scale and composition of reference pools that better explain observed communities in novel ecosystems
-- Neutral vs Niche based 
-] 
-
+A combination functional traits related to dispersal ability and endurance to harsh climatic conditions, in parallel with pools based on weighted Euclidean distances will explain better the observed community composition patterns;
 
 
 ---
-##  Q1: 
+##  H2: 
 
-.small[What are the determinants/mechanisms for the assemblage of novel *pine* communities?]
-.alert[Stepwise community assembly (van der Plas *et al*. 2015; Janzen *et al*. 2017)]
-
-.center[ 
-![:scale 50%](images/STEPCAM.png)
-]
-.small[Q1.3:  What mechanisms do we observe to shape community assemblage among communities?
-(i.e. env. Filtering; limiting similarity; competitive dominance), at what extent?]
-
+Although communities are assembled based on a neutral – niche continuum, environmental filtering, followed by dispersal assembly plays a higher role than limiting similarity;
 
 ---
-## Q2: 
-.small[Is there functional redundancy among sites?]
-.alert[Functional signatures / Price equations]
+## H3: 
 
-.pull-left[ 
-![:scale 80%](images/TraitMechanism.png)]
-
-
-.pull-right[ 
-![:scale 50%](images/PriceEq.png)
-
-![:scale 50%](images/VectorSpace.png)]
-
----
-## Q3: 
-
-.small[Do novel species/traits combinations produce novel structural arragements of (mutualistic/antagonistic/co-occurrence /trophic) interaction networks?]
-.alert[Network reconstruction from traits (Morales-Castilla *et al* 2015 ; Laigle *et al* 2018)]
-.center[
-![:scale 70%](images/NetProxies.png)]
-
-.small[
-- Q3.1: Is there network structure “redundancy" among native vs introduced communities? 
-- Q3.2:  How relevant are trophic interactions to explain trait similarity patterns?]
+Functional traits will correlate positively with trophic network structural metrics 
 
 
 ---
